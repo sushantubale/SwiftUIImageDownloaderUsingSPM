@@ -30,12 +30,11 @@ class ContentViewViewModel: ObservableObject {
                 switch completion {
                 case .finished:
                     print("\(Constants.dataReceived)")
-                case .failure(let error):
+                case .failure:
                     DispatchQueue.main.async { [weak self] in
                         guard let strongSelf = self else { return }
                         strongSelf.showDataNotAvailable = true
                     }
-                    print("\(error.localizedDescription)")
                 }
             } receiveValue: { [weak self] (movies: Result) in
                 guard let strongSelf = self else { return }
