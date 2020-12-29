@@ -17,7 +17,6 @@ struct MoviewDetailView: View {
     }
     var body: some View {
         
-        NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("\(movie?.original_title ?? "\(Constants.loadingTitle)")")
@@ -67,12 +66,8 @@ struct MoviewDetailView: View {
                             .font(.title2)
                     }
                     Spacer()
-                    
                 }.padding()
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
-        }
     }
 }
 
