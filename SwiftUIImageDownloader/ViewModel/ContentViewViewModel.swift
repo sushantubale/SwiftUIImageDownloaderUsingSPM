@@ -43,15 +43,23 @@ class ContentViewViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     strongSelf.totalItems += movies.results.count
                     if strongSelf.posterImages.isEmpty {
-                        strongSelf.posterImages = movies.results
-                        strongSelf.dataFetched = true
-                        strongSelf.currentPage += 1
+                        strongSelf.handleEmptyTotalItems(movies)
                     } else {
-                        strongSelf.posterImages.append(contentsOf: movies.results)
-                        strongSelf.dataFetched = true
-                        strongSelf.currentPage += 1
+                        strongSelf.handleAppendTotalItemsCase(movies)
                     }
                 }
             }
+    }
+    
+    func handleEmptyTotalItems(_ movie: Result) {
+        self.posterImages = movie.results
+        self.dataFetched = true
+        self.currentPage += 1
+    }
+    
+    func handleAppendTotalItemsCase(_ movie: Result) {
+        self.posterImages.append(contentsOf: movie.results)
+        self.dataFetched = true
+        self.currentPage += 1
     }
 }
