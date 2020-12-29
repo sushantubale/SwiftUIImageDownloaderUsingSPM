@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUIImagePackage",
+        "repositoryURL": "https://github.com/sushantubale/SwiftUIImagePackage.git",
+        "state": {
+          "branch": "master",
+          "revision": "b2bddb0c79a8d3b625dda77cb4c4267d6530b71c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

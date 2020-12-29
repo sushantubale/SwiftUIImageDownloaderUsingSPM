@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED21704E259987A90037FA59 /* SwiftUIImagePackage in Frameworks */ = {isa = PBXBuildFile; productRef = ED21704D259987A90037FA59 /* SwiftUIImagePackage */; };
+		ED2170562599B2A80037FA59 /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2170552599B2A80037FA59 /* ContentViewViewModel.swift */; };
+		ED21F26C259A009700FD2887 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21F26B259A009700FD2887 /* Constants.swift */; };
+		ED21F271259A00EE00FD2887 /* MoviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21F270259A00EE00FD2887 /* MoviewDetailView.swift */; };
+		ED21F276259A01FD00FD2887 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21F275259A01FD00FD2887 /* MovieModel.swift */; };
+		ED5692842599762D00F22934 /* SwiftUIImageDownloaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5692832599762D00F22934 /* SwiftUIImageDownloaderApp.swift */; };
+		ED5692862599762D00F22934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5692852599762D00F22934 /* ContentView.swift */; };
+		ED5692882599762D00F22934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED5692872599762D00F22934 /* Assets.xcassets */; };
+		ED56928B2599762D00F22934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED56928A2599762D00F22934 /* Preview Assets.xcassets */; };
+		ED56928D2599762D00F22934 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56928C2599762D00F22934 /* Persistence.swift */; };
+		ED5692902599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED56928E2599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld */; };
+		ED56929B2599762E00F22934 /* SwiftUIImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56929A2599762E00F22934 /* SwiftUIImageDownloaderTests.swift */; };
+		ED5692A62599762E00F22934 /* SwiftUIImageDownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5692A52599762E00F22934 /* SwiftUIImageDownloaderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED5692972599762E00F22934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED5692782599762D00F22934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED56927F2599762D00F22934;
+			remoteInfo = SwiftUIImageDownloader;
+		};
+		ED5692A22599762E00F22934 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED5692782599762D00F22934 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED56927F2599762D00F22934;
+			remoteInfo = SwiftUIImageDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED2170552599B2A80037FA59 /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		ED21F26B259A009700FD2887 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED21F270259A00EE00FD2887 /* MoviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewDetailView.swift; sourceTree = "<group>"; };
+		ED21F275259A01FD00FD2887 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		ED5692802599762D00F22934 /* SwiftUIImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5692832599762D00F22934 /* SwiftUIImageDownloaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImageDownloaderApp.swift; sourceTree = "<group>"; };
+		ED5692852599762D00F22934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED5692872599762D00F22934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED56928A2599762D00F22934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED56928C2599762D00F22934 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ED56928F2599762D00F22934 /* SwiftUIImageDownloader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIImageDownloader.xcdatamodel; sourceTree = "<group>"; };
+		ED5692912599762D00F22934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5692962599762E00F22934 /* SwiftUIImageDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIImageDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED56929A2599762E00F22934 /* SwiftUIImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImageDownloaderTests.swift; sourceTree = "<group>"; };
+		ED56929C2599762E00F22934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5692A12599762E00F22934 /* SwiftUIImageDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIImageDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5692A52599762E00F22934 /* SwiftUIImageDownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImageDownloaderUITests.swift; sourceTree = "<group>"; };
+		ED5692A72599762E00F22934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED56927D2599762D00F22934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED21704E259987A90037FA59 /* SwiftUIImagePackage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5692932599762E00F22934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED56929E2599762E00F22934 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED21F2C7259AA9A600FD2887 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED5692852599762D00F22934 /* ContentView.swift */,
+				ED21F270259A00EE00FD2887 /* MoviewDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED21F2CE259AAFC100FD2887 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ED21F26B259A009700FD2887 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		ED21F2D2259AAFC800FD2887 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED21F275259A01FD00FD2887 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED21F2D6259AAFD300FD2887 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED2170552599B2A80037FA59 /* ContentViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED5692772599762D00F22934 = {
+			isa = PBXGroup;
+			children = (
+				ED5692822599762D00F22934 /* SwiftUIImageDownloader */,
+				ED5692992599762E00F22934 /* SwiftUIImageDownloaderTests */,
+				ED5692A42599762E00F22934 /* SwiftUIImageDownloaderUITests */,
+				ED5692812599762D00F22934 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED5692812599762D00F22934 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED5692802599762D00F22934 /* SwiftUIImageDownloader.app */,
+				ED5692962599762E00F22934 /* SwiftUIImageDownloaderTests.xctest */,
+				ED5692A12599762E00F22934 /* SwiftUIImageDownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED5692822599762D00F22934 /* SwiftUIImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				ED21F2D6259AAFD300FD2887 /* ViewModel */,
+				ED21F2CE259AAFC100FD2887 /* Constants */,
+				ED21F2D2259AAFC800FD2887 /* Model */,
+				ED21F2C7259AA9A600FD2887 /* Views */,
+				ED5692832599762D00F22934 /* SwiftUIImageDownloaderApp.swift */,
+				ED5692872599762D00F22934 /* Assets.xcassets */,
+				ED56928C2599762D00F22934 /* Persistence.swift */,
+				ED5692912599762D00F22934 /* Info.plist */,
+				ED56928E2599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld */,
+				ED5692892599762D00F22934 /* Preview Content */,
+			);
+			path = SwiftUIImageDownloader;
+			sourceTree = "<group>";
+		};
+		ED5692892599762D00F22934 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED56928A2599762D00F22934 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED5692992599762E00F22934 /* SwiftUIImageDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED56929A2599762E00F22934 /* SwiftUIImageDownloaderTests.swift */,
+				ED56929C2599762E00F22934 /* Info.plist */,
+			);
+			path = SwiftUIImageDownloaderTests;
+			sourceTree = "<group>";
+		};
+		ED5692A42599762E00F22934 /* SwiftUIImageDownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED5692A52599762E00F22934 /* SwiftUIImageDownloaderUITests.swift */,
+				ED5692A72599762E00F22934 /* Info.plist */,
+			);
+			path = SwiftUIImageDownloaderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED56927F2599762D00F22934 /* SwiftUIImageDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5692AA2599762E00F22934 /* Build configuration list for PBXNativeTarget "SwiftUIImageDownloader" */;
+			buildPhases = (
+				ED56927C2599762D00F22934 /* Sources */,
+				ED56927D2599762D00F22934 /* Frameworks */,
+				ED56927E2599762D00F22934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIImageDownloader;
+			packageProductDependencies = (
+				ED21704D259987A90037FA59 /* SwiftUIImagePackage */,
+			);
+			productName = SwiftUIImageDownloader;
+			productReference = ED5692802599762D00F22934 /* SwiftUIImageDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED5692952599762E00F22934 /* SwiftUIImageDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5692AD2599762E00F22934 /* Build configuration list for PBXNativeTarget "SwiftUIImageDownloaderTests" */;
+			buildPhases = (
+				ED5692922599762E00F22934 /* Sources */,
+				ED5692932599762E00F22934 /* Frameworks */,
+				ED5692942599762E00F22934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED5692982599762E00F22934 /* PBXTargetDependency */,
+			);
+			name = SwiftUIImageDownloaderTests;
+			productName = SwiftUIImageDownloaderTests;
+			productReference = ED5692962599762E00F22934 /* SwiftUIImageDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED5692A02599762E00F22934 /* SwiftUIImageDownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5692B02599762E00F22934 /* Build configuration list for PBXNativeTarget "SwiftUIImageDownloaderUITests" */;
+			buildPhases = (
+				ED56929D2599762E00F22934 /* Sources */,
+				ED56929E2599762E00F22934 /* Frameworks */,
+				ED56929F2599762E00F22934 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED5692A32599762E00F22934 /* PBXTargetDependency */,
+			);
+			name = SwiftUIImageDownloaderUITests;
+			productName = SwiftUIImageDownloaderUITests;
+			productReference = ED5692A12599762E00F22934 /* SwiftUIImageDownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED5692782599762D00F22934 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					ED56927F2599762D00F22934 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					ED5692952599762E00F22934 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = ED56927F2599762D00F22934;
+					};
+					ED5692A02599762E00F22934 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = ED56927F2599762D00F22934;
+					};
+				};
+			};
+			buildConfigurationList = ED56927B2599762D00F22934 /* Build configuration list for PBXProject "SwiftUIImageDownloader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED5692772599762D00F22934;
+			packageReferences = (
+				ED21704C259987A90037FA59 /* XCRemoteSwiftPackageReference "SwiftUIImagePackage" */,
+			);
+			productRefGroup = ED5692812599762D00F22934 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED56927F2599762D00F22934 /* SwiftUIImageDownloader */,
+				ED5692952599762E00F22934 /* SwiftUIImageDownloaderTests */,
+				ED5692A02599762E00F22934 /* SwiftUIImageDownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED56927E2599762D00F22934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED56928B2599762D00F22934 /* Preview Assets.xcassets in Resources */,
+				ED5692882599762D00F22934 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5692942599762E00F22934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED56929F2599762E00F22934 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED56927C2599762D00F22934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5692902599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld in Sources */,
+				ED56928D2599762D00F22934 /* Persistence.swift in Sources */,
+				ED2170562599B2A80037FA59 /* ContentViewViewModel.swift in Sources */,
+				ED21F271259A00EE00FD2887 /* MoviewDetailView.swift in Sources */,
+				ED21F276259A01FD00FD2887 /* MovieModel.swift in Sources */,
+				ED5692862599762D00F22934 /* ContentView.swift in Sources */,
+				ED5692842599762D00F22934 /* SwiftUIImageDownloaderApp.swift in Sources */,
+				ED21F26C259A009700FD2887 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5692922599762E00F22934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED56929B2599762E00F22934 /* SwiftUIImageDownloaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED56929D2599762E00F22934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5692A62599762E00F22934 /* SwiftUIImageDownloaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED5692982599762E00F22934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED56927F2599762D00F22934 /* SwiftUIImageDownloader */;
+			targetProxy = ED5692972599762E00F22934 /* PBXContainerItemProxy */;
+		};
+		ED5692A32599762E00F22934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED56927F2599762D00F22934 /* SwiftUIImageDownloader */;
+			targetProxy = ED5692A22599762E00F22934 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED5692A82599762E00F22934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED5692A92599762E00F22934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED5692AB2599762E00F22934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIImageDownloader/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIImageDownloader.SwiftUIImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED5692AC2599762E00F22934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIImageDownloader/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIImageDownloader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIImageDownloader.SwiftUIImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED5692AE2599762E00F22934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftUIImageDownloaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIImageDownloader.SwiftUIImageDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIImageDownloader.app/SwiftUIImageDownloader";
+			};
+			name = Debug;
+		};
+		ED5692AF2599762E00F22934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftUIImageDownloaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIImageDownloader.SwiftUIImageDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIImageDownloader.app/SwiftUIImageDownloader";
+			};
+			name = Release;
+		};
+		ED5692B12599762E00F22934 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftUIImageDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIImageDownloader.SwiftUIImageDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUIImageDownloader;
+			};
+			name = Debug;
+		};
+		ED5692B22599762E00F22934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftUIImageDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIImageDownloader.SwiftUIImageDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftUIImageDownloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED56927B2599762D00F22934 /* Build configuration list for PBXProject "SwiftUIImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5692A82599762E00F22934 /* Debug */,
+				ED5692A92599762E00F22934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5692AA2599762E00F22934 /* Build configuration list for PBXNativeTarget "SwiftUIImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5692AB2599762E00F22934 /* Debug */,
+				ED5692AC2599762E00F22934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5692AD2599762E00F22934 /* Build configuration list for PBXNativeTarget "SwiftUIImageDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5692AE2599762E00F22934 /* Debug */,
+				ED5692AF2599762E00F22934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5692B02599762E00F22934 /* Build configuration list for PBXNativeTarget "SwiftUIImageDownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5692B12599762E00F22934 /* Debug */,
+				ED5692B22599762E00F22934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED21704C259987A90037FA59 /* XCRemoteSwiftPackageReference "SwiftUIImagePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sushantubale/SwiftUIImagePackage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED21704D259987A90037FA59 /* SwiftUIImagePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED21704C259987A90037FA59 /* XCRemoteSwiftPackageReference "SwiftUIImagePackage" */;
+			productName = SwiftUIImagePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		ED56928E2599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED56928F2599762D00F22934 /* SwiftUIImageDownloader.xcdatamodel */,
+			);
+			currentVersion = ED56928F2599762D00F22934 /* SwiftUIImageDownloader.xcdatamodel */;
+			path = SwiftUIImageDownloader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ED5692782599762D00F22934 /* Project object */;
+}
