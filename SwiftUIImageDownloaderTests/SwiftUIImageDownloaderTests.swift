@@ -6,18 +6,14 @@
 //
 
 import XCTest
+import SwiftUI
+
 @testable import SwiftUIImageDownloader
 @testable import SwiftUIImagePackage
 
 class SwiftUIImageDownloaderTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    let movie = Result(results: [Movie(adult: true, backdrop_path: "test_path_one", genre_ids: [1], id: 1, original_language: "test_language_one", original_title: "test_title_one", overview: "test_overview_one", popularity: 1.0, poster_path: "test_poster_one", release_date: "test_releasedate_one", title: "test_title_one", video: true, vote_average: 1.0, vote_count: 1)], total_pages: 1, total_results: 1)
 
     func testDataDecoder() {
         let currentPage = 5
@@ -29,38 +25,25 @@ class SwiftUIImageDownloaderTests: XCTestCase {
     
     func testHandleEmptyTotalItems() {
         let contentViewModel = ContentViewViewModel()
-        let result = Result(results: [Movie(adult: true, backdrop_path: "test_path_one", genre_ids: [1], id: 1, original_language: "test_language_one", original_title: "test_title_one", overview: "test_overview_one", popularity: 1.0, poster_path: "test_poster_one", release_date: "test_releasedate_one", title: "test_title_one", video: true, vote_average: 1.0, vote_count: 1)], total_pages: 1, total_results: 1)
-        contentViewModel.handleEmptyTotalItems(result)
-        contentViewModel.posterImages = result.results
+        contentViewModel.handleEmptyTotalItems(movie)
+        contentViewModel.posterImages = movie.results
         contentViewModel.dataFetched = true
-        
-        XCTAssertEqual(contentViewModel.posterImages, result.results)
+        XCTAssertEqual(contentViewModel.posterImages, movie.results)
         XCTAssertEqual(contentViewModel.dataFetched, true)
     }
     
     func testHandleAppendTotalItemsCase() {
         let contentViewModel = ContentViewViewModel()
-        let resultTwo = Result(results: [Movie(adult: true, backdrop_path: "test_path_two", genre_ids: [1], id: 1, original_language: "test_language_two", original_title: "test_title_two", overview: "test_overview_two", popularity: 1.0, poster_path: "test_poster_two", release_date: "test_releasedate_two", title: "test_title_two", video: true, vote_average: 1.0, vote_count: 1)], total_pages: 1, total_results: 1)
-        let resultThree = Result(results: [Movie(adult: true, backdrop_path: "test_path_two", genre_ids: [1], id: 1, original_language: "test_language_two", original_title: "test_title_two", overview: "test_overview_two", popularity: 1.0, poster_path: "test_poster_two", release_date: "test_releasedate_two", title: "test_title_two", video: true, vote_average: 1.0, vote_count: 1)], total_pages: 1, total_results: 1)
-
-        contentViewModel.handleAppendTotalItemsCase(resultTwo)
-        contentViewModel.handleAppendTotalItemsCase(resultThree)
-        
-        XCTAssertTrue(contentViewModel.posterImages.contains(resultTwo.results[0]))
-        XCTAssertTrue(contentViewModel.posterImages.contains(resultThree.results[0]))
+        contentViewModel.handleAppendTotalItemsCase(movie)
+        XCTAssertEqual(contentViewModel.posterImages[0].adult, movie.results[0].adult)
+        XCTAssertEqual(contentViewModel.posterImages[0].video, movie.results[0].video)
+        XCTAssertEqual(contentViewModel.posterImages[0].backdrop_path, movie.results[0].backdrop_path)
         XCTAssertEqual(contentViewModel.dataFetched, true)
     }
     
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testMovieView() {
+        let movieView = MoviewView(image: UIImage(systemName: "pencil")!, title: "testMovie")
+        XCTAssertEqual(movieView.title, "testMovie")
+        XCTAssertEqual(movieView.image, UIImage(systemName: "pencil")!)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
