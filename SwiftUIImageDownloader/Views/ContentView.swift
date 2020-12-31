@@ -55,7 +55,52 @@ struct ContentView: View {
                             }
                         }
                     }
-                    .navigationTitle(Text("\(Constants.moviePosterTitle)"))
+                    .navigationBarTitle(Text("\(Constants.moviePosterTitle)"))
+                    .navigationBarItems(
+                        leading:
+                            HStack(spacing: 30) {
+                                Image(systemName: "person.circle.fill")
+                                    .resizable()
+                                    .renderingMode(.template)
+                                    .foregroundColor(.yellow)
+                                    .frame(width: 30, height: 30)
+                                    .clipShape(Rectangle())
+
+                                Image(systemName: "camera.fill")
+                                    .resizable()
+                                    .renderingMode(.template)
+                                    .foregroundColor(.blue)
+                                    .frame(width: 30, height: 30)
+                                    .clipShape(Rectangle())
+                            },
+                        trailing:
+                            HStack(spacing: 30) {
+                                Image(systemName: "person.crop.circle.badge.plus")
+                                    .resizable()
+                                    .renderingMode(.template)
+                                    .foregroundColor(.blue)
+                                    .frame(width: 30, height: 30)
+                                    .clipShape(Rectangle())
+                                Image(systemName: "arrow.up.heart.fill")
+                                    .resizable()
+                                    .renderingMode(.template)
+                                    .foregroundColor(.blue)
+                                    .frame(width: 30, height: 30)
+                                    .clipShape(Rectangle())
+                            }
+                    )
+//                    .navigationBarItems(leading: Button(action: {}) {
+//                        HStack(spacing: 30) {
+//                            Image(systemName: "person.circle.fill")
+//                                .resizable()
+//                                .frame(width: 30, height: 30)
+//                                .clipShape(Circle())
+//                            Image(systemName: "camera.fill")
+//                                .resizable()
+//                                .frame(width: 30, height: 30)
+//                            Spacer()
+//                        }
+//                    })
                 }
             }
             
