@@ -22,7 +22,7 @@ struct ContentView: View {
             NavigationView {
                 if let posterImage = request.posterImages {
                     ScrollView {
-                        LazyVGrid(columns: gridItemLayout, spacing: 100) {
+                        LazyVGrid(columns: gridItemLayout) {
                             ForEach(posterImage, id: \Movie.id) { url in
                                 NavigationLink(destination: MoviewDetailView(movie: url)) {
                                     ImageFetcherView(url: (URL(string: "\(Constants.URL.basePoster)/\(Constants.posterPath)/\(url.poster_path)") ?? URL(string: ""))!, placeholder: {
@@ -58,7 +58,7 @@ struct ContentView: View {
                             }
                         }
                     }
-                    .navigationBarTitle(Text("\(Constants.moviePosterTitle)"))
+                    .navigationBarTitle(Text("\(Constants.moviePosterTitle)"), displayMode: .large)
                     .navigationBarItems(
                         leading:
                             HStack(spacing: 30) {
