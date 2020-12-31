@@ -25,7 +25,7 @@ struct Constants {
     static let downloadingImage = "Downloading Image...."
     static let exclamationMarkImageName = "exclamationmark.triangle"
     static let noDataAvailable = "No More Data Available"
-    static let moviePosterTitle = "Movie Posters"
+    static let moviePosterTitle = "Popular Movies"
     static let downloadingData = "Downloading...."
     
     static let loadingTitle = "Loading Title"

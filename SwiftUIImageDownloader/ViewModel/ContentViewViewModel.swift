@@ -18,6 +18,10 @@ class ContentViewViewModel: ObservableObject {
     private var currentPage = 1
     @Published var showDataNotAvailable: Bool = false
     
+    deinit {
+        self.cancellable?.cancel()
+    }
+    
     func request() {
         let dataDecoder = DataDecoder(url: URL(string: "\(Constants.URL.base)\(Constants.URL.apiKeyPath)\(Constants.apiKey)\(Constants.URL.page)\(currentPage)\(Constants.URL.sort)") ?? URL(string: "")!)
 
