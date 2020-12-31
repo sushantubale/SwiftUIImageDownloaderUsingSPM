@@ -14,13 +14,15 @@ import SwiftUIImagePackage
 struct ContentView: View {
 
     @ObservedObject var request = ContentViewViewModel()
+    
+    private var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
         
         if request.dataFetched == true {
             NavigationView {
                 if let posterImage = request.posterImages {
                     ScrollView {
-                        LazyVStack {
+                        LazyVGrid(columns: gridItemLayout, spacing: 100) {
                             ForEach(posterImage, id: \Movie.id) { url in
                                 NavigationLink(destination: MoviewDetailView(movie: url)) {
                                     ImageFetcherView(url: (URL(string: "\(Constants.URL.basePoster)/\(Constants.posterPath)/\(url.poster_path)") ?? URL(string: ""))!, placeholder: {
@@ -31,12 +33,12 @@ struct ContentView: View {
                                             .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.width / 2, alignment: .center)
                                     }, movieView: { (moviewView) -> MoviewView in
                                         MoviewView(image: moviewView.image!, title: moviewView.title!)
-
+                                        
                                     }, title: url.original_title)
                                 }
                                 
                                 .frame(idealHeight: UIScreen.main.bounds.width / 2)
-
+                                
                                 .onAppear {
                                     if request.totalItems >= request.posterImages.count {
                                         request.request()
@@ -44,14 +46,15 @@ struct ContentView: View {
                                 }
                                 .frame(idealHeight: UIScreen.main.bounds.width / 2)
                             }
-                            if request.showDataNotAvailable == true {
-                                Divider()
-                                HStack(alignment: .center, spacing: 10){
-                                  Image(systemName: "\(Constants.exclamationMarkImageName)")
+
+                        }
+                        if request.showDataNotAvailable == true {
+                            Divider()
+                            HStack(alignment: .center, spacing: 10) {
+                                Image(systemName: "\(Constants.exclamationMarkImageName)")
                                     .foregroundColor(Color.red)
                                     .scaleEffect(1.1)
-                                    Text("\(Constants.noDataAvailable)")
-                                }
+                                Text("\(Constants.noDataAvailable)")
                             }
                         }
                     }
