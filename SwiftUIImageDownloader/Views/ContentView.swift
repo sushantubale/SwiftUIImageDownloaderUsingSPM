@@ -92,18 +92,6 @@ struct ContentView: View {
                                     .clipShape(Rectangle())
                             }
                     )
-//                    .navigationBarItems(leading: Button(action: {}) {
-//                        HStack(spacing: 30) {
-//                            Image(systemName: "person.circle.fill")
-//                                .resizable()
-//                                .frame(width: 30, height: 30)
-//                                .clipShape(Circle())
-//                            Image(systemName: "camera.fill")
-//                                .resizable()
-//                                .frame(width: 30, height: 30)
-//                            Spacer()
-//                        }
-//                    })
                 }
             }
             
