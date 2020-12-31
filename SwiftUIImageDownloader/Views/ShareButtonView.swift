@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ShareButtonView: View {
 
-  let itemsToShare = ["https://itunes.apple.com/app/id1234"]
+  let itemsToShare = ["https://www.testShare.com"]
 
   var body: some View {
     Button(action: { showShareSheet(with: itemsToShare) }) {
