@@ -20,6 +20,10 @@
 		ED5692902599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED56928E2599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld */; };
 		ED56929B2599762E00F22934 /* SwiftUIImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED56929A2599762E00F22934 /* SwiftUIImageDownloaderTests.swift */; };
 		ED5692A62599762E00F22934 /* SwiftUIImageDownloaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5692A52599762E00F22934 /* SwiftUIImageDownloaderUITests.swift */; };
+		EDB88C00259D94B300F3FF03 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88BFF259D94B300F3FF03 /* MessagesView.swift */; };
+		EDB88C05259D94C200F3FF03 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88C04259D94C200F3FF03 /* CameraView.swift */; };
+		EDB88C0A259D94D700F3FF03 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88C09259D94D700F3FF03 /* StoriesView.swift */; };
+		EDB88C0F259D94E900F3FF03 /* SpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88C0E259D94E900F3FF03 /* SpotlightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		ED5692A12599762E00F22934 /* SwiftUIImageDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIImageDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5692A52599762E00F22934 /* SwiftUIImageDownloaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImageDownloaderUITests.swift; sourceTree = "<group>"; };
 		ED5692A72599762E00F22934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB88BFF259D94B300F3FF03 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		EDB88C04259D94C200F3FF03 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		EDB88C09259D94D700F3FF03 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		EDB88C0E259D94E900F3FF03 /* SpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,10 @@
 			children = (
 				ED5692852599762D00F22934 /* ContentView.swift */,
 				ED21F270259A00EE00FD2887 /* MoviewDetailView.swift */,
+				EDB88BFF259D94B300F3FF03 /* MessagesView.swift */,
+				EDB88C04259D94C200F3FF03 /* CameraView.swift */,
+				EDB88C09259D94D700F3FF03 /* StoriesView.swift */,
+				EDB88C0E259D94E900F3FF03 /* SpotlightView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,12 +331,16 @@
 			files = (
 				ED5692902599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld in Sources */,
 				ED56928D2599762D00F22934 /* Persistence.swift in Sources */,
+				EDB88C00259D94B300F3FF03 /* MessagesView.swift in Sources */,
+				EDB88C0A259D94D700F3FF03 /* StoriesView.swift in Sources */,
+				EDB88C05259D94C200F3FF03 /* CameraView.swift in Sources */,
 				ED2170562599B2A80037FA59 /* ContentViewViewModel.swift in Sources */,
 				ED21F271259A00EE00FD2887 /* MoviewDetailView.swift in Sources */,
 				ED21F276259A01FD00FD2887 /* MovieModel.swift in Sources */,
 				ED5692862599762D00F22934 /* ContentView.swift in Sources */,
 				ED5692842599762D00F22934 /* SwiftUIImageDownloaderApp.swift in Sources */,
 				ED21F26C259A009700FD2887 /* Constants.swift in Sources */,
+				EDB88C0F259D94E900F3FF03 /* SpotlightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

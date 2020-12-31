@@ -13,8 +13,38 @@ struct SwiftUIImageDownloaderApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "mappin.circle")
+                        Text("Menu")
+                    }
+                
+                MessagesView()
+                    .tabItem {
+                        Image(systemName: "message")
+                        Text("Message")
+                    }
+                
+                CameraView()
+                    .tabItem {
+                        Image(systemName: "camera")
+                        Text("Camera")
+                    }
+                
+                
+                StoriesView()
+                    .tabItem {
+                        Image(systemName: "person.2")
+                        Text("Stories")
+                    }
+                
+                SpotlightView()
+                    .tabItem {
+                        Image(systemName: "arrowtriangle.right")
+                        Text("Soptlight")
+                    }
+            }
         }
     }
 }
