@@ -70,7 +70,7 @@ struct MoviewDetailView: View {
             }
             .navigationBarItems(trailing:
                     HStack(spacing: 30) {
-                        ShareButton()
+                        ShareButtonView()
                     }
             )
     }
