@@ -23,8 +23,9 @@ class ContentViewViewModel: ObservableObject {
 
         self.cancellable = dataDecoder.dataTaskPublisher()
             .receive(on: DispatchQueue.main)
-            .handleEvents(receiveOutput: { response in
-              self.dataFetched = false
+            .handleEvents(receiveOutput: { [weak self] response in
+                guard let strongSelf = self else { return }
+                strongSelf.dataFetched = false
             })
             .sink { (completion) in
                 switch completion {
@@ -38,7 +39,6 @@ class ContentViewViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] (movies: Result) in
                 guard let strongSelf = self else { return }
-
                 DispatchQueue.main.async {
                     strongSelf.totalItems += movies.results.count
                     if strongSelf.posterImages.isEmpty {

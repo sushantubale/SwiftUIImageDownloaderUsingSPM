@@ -2,7 +2,7 @@
 //  SpotlightView.swift
 //  SwiftUIImageDownloader
 //
-//  Created by Mrunalini Khushal Kumbhalkar on 12/31/20.
+//  Created by Sushant Ubale on 12/31/20.
 //
 
 import SwiftUI
