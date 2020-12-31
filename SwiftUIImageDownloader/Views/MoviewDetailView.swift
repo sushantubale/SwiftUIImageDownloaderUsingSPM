@@ -68,6 +68,11 @@ struct MoviewDetailView: View {
                     Spacer()
                 }.padding()
             }
+            .navigationBarItems(trailing:
+                    HStack(spacing: 30) {
+                        ShareButton()
+                    }
+            )
     }
 }
 
@@ -76,3 +81,5 @@ struct MoviewDetailView_Previews: PreviewProvider {
         MoviewDetailView(movie: Movie(adult: false, backdrop_path: "backdrop_path", genre_ids: [1], id: 1, original_language: "original_language", original_title: "original_title", overview: "overview", popularity: 1.0, poster_path: "poster_path", release_date: "release_date", title: "title", video: false, vote_average: 1.0, vote_count: 1))
     }
 }
+
+

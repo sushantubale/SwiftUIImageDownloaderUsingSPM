@@ -24,6 +24,7 @@
 		EDB88C05259D94C200F3FF03 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88C04259D94C200F3FF03 /* CameraView.swift */; };
 		EDB88C0A259D94D700F3FF03 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88C09259D94D700F3FF03 /* StoriesView.swift */; };
 		EDB88C0F259D94E900F3FF03 /* SpotlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88C0E259D94E900F3FF03 /* SpotlightView.swift */; };
+		EDB88C14259D9C5200F3FF03 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB88C13259D9C5200F3FF03 /* ShareButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		EDB88C04259D94C200F3FF03 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EDB88C09259D94D700F3FF03 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		EDB88C0E259D94E900F3FF03 /* SpotlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightView.swift; sourceTree = "<group>"; };
+		EDB88C13259D9C5200F3FF03 /* ShareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EDB88C04259D94C200F3FF03 /* CameraView.swift */,
 				EDB88C09259D94D700F3FF03 /* StoriesView.swift */,
 				EDB88C0E259D94E900F3FF03 /* SpotlightView.swift */,
+				EDB88C13259D9C5200F3FF03 /* ShareButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED5692902599762D00F22934 /* SwiftUIImageDownloader.xcdatamodeld in Sources */,
+				EDB88C14259D9C5200F3FF03 /* ShareButtonView.swift in Sources */,
 				ED56928D2599762D00F22934 /* Persistence.swift in Sources */,
 				EDB88C00259D94B300F3FF03 /* MessagesView.swift in Sources */,
 				EDB88C0A259D94D700F3FF03 /* StoriesView.swift in Sources */,
